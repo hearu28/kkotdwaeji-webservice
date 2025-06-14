@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대기번호 발급기 | 꽃돼지 숯가마</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 🔻 부트스트랩 네비게이션 -->
+    <nav class="navbar navbar-expand-lg navbar-white bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">🌸 꽃돼지</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">메뉴판</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="wait.html">대기번호</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">관리자</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 🔻 대기번호 본문 -->
+    <div class="container text-center mt-5">
+      <h2>🙋 대기번호 발급</h2>
+      <p class="lead">현재 대기번호는...</p>
+      <div id="ticketDisplay" class="display-3 fw-bold mb-4">0</div>
+      <button class="btn btn-lg btn-primary px-5 py-2" onclick="issueTicket()">
+        대기표 발급받기
+      </button>
+    </div>
+
+    <script src="wait.js"></script>
+  </body>
+</html>
