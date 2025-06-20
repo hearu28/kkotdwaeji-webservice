@@ -1,4 +1,4 @@
-fetch("assets/menus.json")
+fetch("./assets/menus.json")
   .then((res) => res.json())
   .then((menus) => {
     const container = document.getElementById("menuContainer");
